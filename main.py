@@ -28,7 +28,6 @@ query = "What are the best sports betting picks for games occuring tonight?"
 # Fetch context using Tavily
 context = get_formatted_context(query)
 
-# Configure Google Generative AI (You already have this)
 llm = GoogleGenerativeAI(
     model="gemini-pro",
     google_api_key=os.getenv("GOOGLE_API_KEY"), 
